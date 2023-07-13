@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Pratama's Laundry</title>
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('icons/pratama_icon.png') }}">
+    <title>Laundry</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('icons/LogoPk.png') }}">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     @yield('css')
 </head>
@@ -21,10 +21,10 @@
         <div class="nav-header">
             <div class="brand-logo">
                 <a href="{{ url('/dashboard') }}">
-                    <b class="logo-abbr"><img src="{{ asset('icons/pratama_icon_w.png') }}" alt=""> </b>
-                    <span class="logo-compact"><img src="{{ asset('icons/pratama_text.png') }}" width="110" alt=""></span>
+                    <img src="{{ asset('icons/LogoPk.png') }}" width="60" alt="">
+                    <span class="logo-compact"><img src="{{ asset('icons/logo.png') }}" width="110" alt=""></span>
                     <span class="brand-title">
-                        <img src="{{ asset('icons/pratama_text.png') }}" width="110" alt="">
+                        <img src="{{ asset('icons/logo.png') }}" width="110" alt="">
                     </span>
                 </a>
             </div>
@@ -77,7 +77,7 @@
         <div class="nk-sidebar">           
             <div class="nk-nav-scroll">
                 <ul class="metismenu" id="menu">
-                    <li class="nav-label">Dashboard</li>
+
                     <li>
                         <a href="{{ url('/dashboard') }}" aria-expanded="false">
                             <i class="fa fa-tachometer menu-icon"></i><span class="nav-text">Dashboard</span>

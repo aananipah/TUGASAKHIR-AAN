@@ -46,30 +46,31 @@
                                 <label class="col-lg-4 col-form-label" for="val-role">Posisi <span class="text-danger">*</span>
                                 </label>
                                 <div class="col-lg-6">
-                                    <select class="form-control" id="val-role" name="role">
-                                        <option value="">-- Pilih Posisi --</option>
-                                        @if($penggunas->role == 'admin')
-                                        <option value="admin" selected="">Admin</option>
-                                        <option value="kurir">Kurir</option>
-                                        <option value="kasir">Kasir</option>
-                                        <option value="owner">Kurir</option>
-                                        @else
-                                        <option value="admin">Admin</option>
-                                        <option value="kurir" selected="">Kurir</option>
-                                        <option value="kasir">Kasir</option>
-                                        <option value="owner">Owner</option>
-                                        @else
-                                        <option value="admin">Admin</option>
-                                        <option value="kurir">Kurir</option>
-                                        <option value="kasir" selected="">Kasir</option>
-                                        <option value="owner">Owner</option>
-                                        @else
-                                        <option value="admin">Admin</option>
-                                        <option value="kurir">Kurir</option>
-                                        <option value="kasir">Kasir</option>
-                                        <option value="owner" selected="">Owner</option>
-                                        @endif
-                                    </select>
+                                <select class="form-control" id="val-role" name="role">
+                                <option value="">-- Pilih Posisi --</option>
+                                @if($penggunas->role == 'admin')
+                                    <option value="admin" selected="">Admin</option>
+                                    <option value="kurir">Kurir</option>
+                                    <option value="kasir">Kasir</option>
+                                    <option value="owner">Owner</option>
+                                @elseif($penggunas->role == 'kurir')
+                                    <option value="admin">Admin</option>
+                                    <option value="kurir" selected="">Kurir</option>
+                                    <option value="kasir">Kasir</option>
+                                    <option value="owner">Owner</option>
+                                @elseif($penggunas->role == 'kasir')
+                                    <option value="admin">Admin</option>
+                                    <option value="kurir">Kurir</option>
+                                    <option value="kasir" selected="">Kasir</option>
+                                    <option value="owner">Owner</option>
+                                @elseif($penggunas->role == 'owner')
+                                    <option value="admin">Admin</option>
+                                    <option value="kurir">Kurir</option>
+                                    <option value="kasir">Kasir</option>
+                                    <option value="owner" selected="">Owner</option>
+                                @endif
+                            </select>
+
                                 </div>
                             </div>
                             <div class="form-group row">

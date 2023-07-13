@@ -80,6 +80,7 @@ class HalTransaksiController extends Controller
     // Membuka PDF Transaksi
     public function pdfTransaksi($id)
     {
+        set_time_limit(0); // Tambahkan ini untuk menghapus batasan waktu maksimum
         $transaksis = Transaksi::join('outlets', 'outlets.id', '=', 'transaksis.id_outlet')
         ->join('pelanggans', 'pelanggans.kd_pelanggan', '=', 'transaksis.kd_pelanggan')
         ->join('users', 'users.kd_pengguna', '=', 'transaksis.kd_pegawai')

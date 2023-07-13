@@ -72,7 +72,6 @@
                         <a href="#about" class="nav-item nav-link">Tentang Kami</a>
                         <a href="#harga" class="nav-item nav-link">Harga</a>
                         <a href="#testimoni" class="nav-item nav-link">Testimoni</a>
-                        <a href="{{ route('login') }}" class="nav-item nav-link">Login</a>
                         
                        
                         @auth
@@ -95,7 +94,7 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-md-3">Laundry & Cuci Kering</h4>
                             <h1 class="display-3 text-white mb-md-4">Pelayanan Laundry Terbaik</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Lihat</a>
+                            <a href="{{ route('login') }}" class="btn btn-primary py-md-3 px-md-5 mt-2">Login</a>
                         </div>
                     </div>
                 </div>
@@ -105,7 +104,7 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-md-3">Laundry & Cuci Kering</h4>
                             <h1 class="display-3 text-white mb-md-4">Pekerja Profesional</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Lihat</a>
+                            <a href="{{ route('login') }}" class="btn btn-primary py-md-3 px-md-5 mt-2">Login</a>
                         </div>
                     </div>
                 </div>
@@ -115,7 +114,7 @@
                         <div class="p-3" style="max-width: 900px;">
                             <h4 class="text-white text-uppercase mb-md-3">Laundry & Cuci Kering</h4>
                             <h1 class="display-3 text-white mb-md-4">Bersih dan Cepat</h1>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Lihat</a>
+                            <a href="{{ route('login') }}" class="btn btn-primary py-md-3 px-md-5 mt-2">Login</a>
                         </div>
                     </div>
                 </div>

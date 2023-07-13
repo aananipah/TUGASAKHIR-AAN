@@ -51,8 +51,7 @@
 	<div class="header">
 		<table style="width: 100%;" class="table-header">
 			<tr>
-				<td style="padding-top: 50px; padding-left: 50px;"><img src="{{ asset('icons/pratama_icon.png') }}" class="logo-laundry"></td>
-				<td class="text-right" style="padding-top: 50px; padding-right: 50px;">Pratama Laundry<br>Jasa Laundry Terbaik di Indonesia</td>
+				<td class="text-right" style="padding-top: 50px; padding-right: 50px;">Putra Kembar Laundry<br>Jasa Laundry Terbaik di Indonesia</td>
 			</tr>
 			<tr>
 				<td colspan="2" style="font-size: 28px; color: #313131; padding-top: 15px; padding-right: 50px;" class="text-right">Invoice</td>

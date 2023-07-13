@@ -120,6 +120,7 @@ class HalLaporanController extends Controller
     // Cetak PDF Laporan Pegawai
     public function pdfLaporanPegawai(Request $req, $id)
     {
+		set_time_limit(0); // Tambahkan ini untuk menghapus batasan waktu maksimum
     	if($req->check_semua == 1){
     		$users = User::find($id);
     		$riwayats = Transaksi::join('users', 'users.kd_pengguna', '=', 'transaksis.kd_pegawai')
@@ -171,6 +172,7 @@ class HalLaporanController extends Controller
     // Cetak PDF Laporan Transaksi
     public function pdfLaporanTransaksi(Request $req)
     {
+		set_time_limit(0); // Tambahkan ini untuk menghapus batasan waktu maksimum
     	if($req->check_semua == 1){
     		$transaksis = Transaksi::join('pelanggans', 'pelanggans.kd_pelanggan', '=', 'transaksis.kd_pelanggan')
 	    	->join('outlets', 'outlets.id', '=', 'transaksis.id_outlet')
